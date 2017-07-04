@@ -39,13 +39,24 @@ namespace WpfApp1
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            var pathToFiles = @"C:\Users\Alex\Repositories\MusicScoreClassifier\ModelGenerator\data\test_set_resized_256";
-            var files = Directory.EnumerateFiles(pathToFiles).ToList();
+            var pathToFiles = @"C:\Users\Alex\Desktop\images";
+            var directories = Directory.EnumerateDirectories(pathToFiles).ToList();
+            var classes = directories.Select(p => Path.GetFileName(p)).ToList();
+
+            var files = new List<String>();
+            foreach (var directory in directories)
+            {
+                files.AddRange(Directory.EnumerateFiles(directory));
+            }
+
             files.Shuffle();
+            files = files.Take(160).ToList();
 
             foreach (var file in files)
             {
-                var expectedType = new FileInfo(file).Name.StartsWith("score") ? Category.Scores : Category.Other;
+                var fileNameWithSymbolFolder = file.Substring(pathToFiles.Length+1);
+                var className = fileNameWithSymbolFolder.Substring(0, fileNameWithSymbolFolder.Length - new FileInfo(file).Name.Length - 1);
+                var expectedType = classes.IndexOf(className) + 1;
                 var classification = new Classification(file, expectedType);
                 _classifications.Add(classification);
             }
@@ -104,16 +115,6 @@ namespace WpfApp1
                 
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            ClassifyAsScores();
-        }
-
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            ClassifyAsOther();
-        }
-
         private void button3_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -144,6 +145,7 @@ namespace WpfApp1
             {
                 if (_classifications[i].UserClassification == Category.Unclassified && i > 0)
                 {
+                    textBox.Text = _classifications[i - 1].UserClassification.ToString();
                     _classifications[i - 1].UserClassification = Category.Unclassified;
                     LoadNextImage();
                     return;
@@ -166,6 +168,37 @@ namespace WpfApp1
                 
                 ;
             MessageBox.Show(this, message);
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            ClassifyImage();
+        }
+
+        private void textBox_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.LeftShift)
+            {
+                Undo();
+            }
+            else if (e.Key == Key.Enter)
+            {
+                ClassifyImage();
+                textBox.Clear();
+            }
+        }
+
+        private void ClassifyImage()
+        {
+            try
+            {
+                var classNumber = int.Parse(textBox.Text);
+                ClassifyAs(classNumber);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ungültige Klassen-nummber: " + ex.Message);
+            }
         }
     }
 

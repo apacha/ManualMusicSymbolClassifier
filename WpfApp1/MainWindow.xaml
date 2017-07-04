@@ -11,7 +11,7 @@
         Loaded="Window_Loaded"
         KeyUp="Window_KeyUp">
     <Grid Background="LightGray"
-          Margin="0,0,-404,0">
+          Margin="0,0,-8,0">
         <Image x:Name="image"
                HorizontalAlignment="Left"
                Height="192"
@@ -20,17 +20,17 @@
                Margin="196,116,0,0"
                Stretch="None" />
         <Button x:Name="button"
-                Content="Next symbol (enter)"
+                Content="Nächstes Symbol (Enter)"
                 HorizontalAlignment="Left"
-                Margin="26,306,0,0"
+                Margin="26,221,0,0"
                 VerticalAlignment="Top"
                 Width="151"
                 Height="41"
                 Click="button_Click" />
         <Label x:Name="label"
-               Content="What do you see in the image?"
+               Content="Welche Klasse siehst du?"
                HorizontalAlignment="Left"
-               Margin="163,42,0,0"
+               Margin="37,135,0,0"
                VerticalAlignment="Top" />
         <Button x:Name="button2"
                 Content="Save results"
@@ -50,7 +50,7 @@
                 Width="151"
                 Click="button3_Click" />
         <Button x:Name="undoButton"
-                Content="Undo (back)"
+                Content="Undo (left shift)"
                 HorizontalAlignment="Left"
                 Margin="344,68,0,0"
                 VerticalAlignment="Top"
@@ -62,6 +62,23 @@
                 Margin="196,489,0,10"
                 Width="128"
                 Click="statisticsButton_Click" />
+        <TextBox x:Name="textBox"
+                 HorizontalAlignment="Left"
+                 Height="23"
+                 Margin="26,180,0,0"
+                 TextWrapping="Wrap"
+                 Text=""
+                 ToolTip="Klassennummer"
+                 VerticalAlignment="Top"
+                 Width="151"
+                 KeyUp="textBox_KeyUp" />
+        <Image x:Name="image1"
+               HorizontalAlignment="Left"
+               Height="357"
+               Margin="344,116,0,0"
+               VerticalAlignment="Top"
+               Width="351"
+               Source="CheatSheet.png" />
 
     </Grid>
 </Window>
