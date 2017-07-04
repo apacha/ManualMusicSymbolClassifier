@@ -81,11 +81,7 @@ namespace WpfApp1
         {
             if (e.Key == Key.LeftShift)
             {
-                ClassifyAsScores();
-            }
-            else if (e.Key == Key.RightShift)
-            {
-                ClassifyAsOther();
+                ClassifyAs(-1);
             }
             else if (e.Key == Key.Back)
             {
@@ -93,15 +89,9 @@ namespace WpfApp1
             }
         }
 
-        private void ClassifyAsOther()
+        private void ClassifyAs(int classNumber)
         {
-            _currentClassification.UserClassification = Category.Other;
-            LoadNextImage();
-        }
-
-        private void ClassifyAsScores()
-        {
-            _currentClassification.UserClassification = Category.Scores;
+            _currentClassification.UserClassification = classNumber;
             LoadNextImage();
         }
 
@@ -179,25 +169,22 @@ namespace WpfApp1
         }
     }
 
-    internal enum Category
+    internal class Category
     {
-        Unclassified,
+        public const int Unclassified = -1;
 
-        Scores,
-
-        Other,
-
+        public int CurrentClass { get; set; } = Unclassified;
     }
 
     internal class Classification
     {
         public string FilePath { get; set;  }
 
-        public Category ExpectedClassification { get; set; }
+        public int ExpectedClassification { get; set; }
 
-        public Category UserClassification { get; set; }
+        public int UserClassification { get; set; }
 
-        public Classification(string file, Category expectedClassification)
+        public Classification(string file, int expectedClassification)
         {
             this.FilePath = file;
             this.ExpectedClassification = expectedClassification;
