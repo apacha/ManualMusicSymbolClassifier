@@ -21,13 +21,13 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\3-4-Time\\96-30_3.png",
-    "ExpectedClassification": 3,
-    "UserClassification": 3
+    "ExpectedClassification": 4,
+    "UserClassification": 4
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\2-4-Time\\67-38_3.png",
-    "ExpectedClassification": 2,
-    "UserClassification": 2
+    "ExpectedClassification": 3,
+    "UserClassification": 3
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Barline\\97-150_3.png",
@@ -86,8 +86,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\9-8-Time\\4-31_3.png",
-    "ExpectedClassification": 7,
-    "UserClassification": 7
+    "ExpectedClassification": 8,
+    "UserClassification": 8
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Sixteenth-Note\\69-114_3.png",
@@ -111,8 +111,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\3-4-Time\\31-29_3.png",
-    "ExpectedClassification": 3,
-    "UserClassification": 3
+    "ExpectedClassification": 4,
+    "UserClassification": 4
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Whole-Note\\63-72_3.png",
@@ -131,13 +131,13 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\12-8-Time\\22-2_3.png",
-    "ExpectedClassification": 8,
-    "UserClassification": 8
+    "ExpectedClassification": 1,
+    "UserClassification": 1
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\9-8-Time\\23-31_3.png",
-    "ExpectedClassification": 7,
-    "UserClassification": 7
+    "ExpectedClassification": 8,
+    "UserClassification": 8
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\F-Clef\\71-6_3.png",
@@ -181,8 +181,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\12-8-Time\\85-34_3.png",
-    "ExpectedClassification": 8,
-    "UserClassification": 8
+    "ExpectedClassification": 1,
+    "UserClassification": 1
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Common-Time\\24-41_3.png",
@@ -211,8 +211,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\9-8-Time\\53-27_3.png",
-    "ExpectedClassification": 7,
-    "UserClassification": 7
+    "ExpectedClassification": 8,
+    "UserClassification": 8
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Whole-Note\\79-71_3.png",
@@ -226,8 +226,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\3-4-Time\\54-32_3.png",
-    "ExpectedClassification": 3,
-    "UserClassification": 3
+    "ExpectedClassification": 4,
+    "UserClassification": 4
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Eighth-Note\\26-99_3.png",
@@ -246,8 +246,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\2-4-Time\\40-38_3.png",
-    "ExpectedClassification": 2,
-    "UserClassification": 2
+    "ExpectedClassification": 3,
+    "UserClassification": 3
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Sixteenth-Note\\88-114_3.png",
@@ -276,13 +276,13 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\2-4-Time\\46-37_3.png",
-    "ExpectedClassification": 2,
-    "UserClassification": 2
+    "ExpectedClassification": 3,
+    "UserClassification": 3
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\12-8-Time\\58-33_3.png",
-    "ExpectedClassification": 8,
-    "UserClassification": 8
+    "ExpectedClassification": 1,
+    "UserClassification": 1
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Thirty-Two-Note\\8-136_3.png",
@@ -306,8 +306,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\3-8-Time\\96-50_3.png",
-    "ExpectedClassification": 4,
-    "UserClassification": 4
+    "ExpectedClassification": 5,
+    "UserClassification": 5
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Sharp\\47-57_3.png",
@@ -326,8 +326,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\3-8-Time\\81-52_3.png",
-    "ExpectedClassification": 4,
-    "UserClassification": 4
+    "ExpectedClassification": 5,
+    "UserClassification": 5
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Sixteenth-Note\\98-114_3.png",
@@ -351,8 +351,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\3-4-Time\\73-31_3.png",
-    "ExpectedClassification": 3,
-    "UserClassification": 3
+    "ExpectedClassification": 4,
+    "UserClassification": 4
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Whole-Note\\17-151_3.png",
@@ -381,13 +381,13 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\2-4-Time\\13-9_3.png",
-    "ExpectedClassification": 2,
-    "UserClassification": 2
+    "ExpectedClassification": 3,
+    "UserClassification": 3
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\9-8-Time\\29-27_3.png",
-    "ExpectedClassification": 7,
-    "UserClassification": 7
+    "ExpectedClassification": 8,
+    "UserClassification": 8
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Whole-Half-Rest\\73-74_3.png",
@@ -401,8 +401,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\9-8-Time\\5-29_3.png",
-    "ExpectedClassification": 7,
-    "UserClassification": 7
+    "ExpectedClassification": 8,
+    "UserClassification": 8
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Whole-Note\\88-70_3.png",
@@ -426,8 +426,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\6-8-Time\\69-45_3.png",
-    "ExpectedClassification": 6,
-    "UserClassification": 6
+    "ExpectedClassification": 7,
+    "UserClassification": 7
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Double-Sharp\\29-62_3.png",
@@ -436,8 +436,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\9-8-Time\\64-25_3.png",
-    "ExpectedClassification": 7,
-    "UserClassification": 7
+    "ExpectedClassification": 8,
+    "UserClassification": 8
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Half-Note\\56-78_3.png",
@@ -446,8 +446,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\2-2-Time\\54-44_3.png",
-    "ExpectedClassification": 1,
-    "UserClassification": 1
+    "ExpectedClassification": 2,
+    "UserClassification": 2
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Natural\\54-68_3.png",
@@ -466,8 +466,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\9-8-Time\\3-32_3.png",
-    "ExpectedClassification": 7,
-    "UserClassification": 7
+    "ExpectedClassification": 8,
+    "UserClassification": 8
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Eighth-Note\\4-57_3.png",
@@ -476,8 +476,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\9-8-Time\\30-25_3.png",
-    "ExpectedClassification": 7,
-    "UserClassification": 7
+    "ExpectedClassification": 8,
+    "UserClassification": 8
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Dot\\69-145_3.png",
@@ -486,8 +486,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\6-8-Time\\45-45_3.png",
-    "ExpectedClassification": 6,
-    "UserClassification": 6
+    "ExpectedClassification": 7,
+    "UserClassification": 7
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\F-Clef\\95-6_3.png",
@@ -531,13 +531,13 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\6-8-Time\\93-48_3.png",
-    "ExpectedClassification": 6,
-    "UserClassification": 6
+    "ExpectedClassification": 7,
+    "UserClassification": 7
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\3-4-Time\\95-30_3.png",
-    "ExpectedClassification": 3,
-    "UserClassification": 3
+    "ExpectedClassification": 4,
+    "UserClassification": 4
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Half-Note\\2-82_3.png",
@@ -566,8 +566,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\9-8-Time\\26-26_3.png",
-    "ExpectedClassification": 7,
-    "UserClassification": 7
+    "ExpectedClassification": 8,
+    "UserClassification": 8
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Sixty-Four-Note\\98-134_3.png",
@@ -586,8 +586,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\2-4-Time\\8-9_3.png",
-    "ExpectedClassification": 2,
-    "UserClassification": 2
+    "ExpectedClassification": 3,
+    "UserClassification": 3
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Double-Sharp\\21-55_3.png",
@@ -601,8 +601,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\4-4-Time\\11-23_3.png",
-    "ExpectedClassification": 5,
-    "UserClassification": 5
+    "ExpectedClassification": 6,
+    "UserClassification": 6
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Double-Sharp\\9-55_3.png",
@@ -611,13 +611,13 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\6-8-Time\\78-48_3.png",
-    "ExpectedClassification": 6,
-    "UserClassification": 6
+    "ExpectedClassification": 7,
+    "UserClassification": 7
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\9-8-Time\\84-28_3.png",
-    "ExpectedClassification": 7,
-    "UserClassification": 7
+    "ExpectedClassification": 8,
+    "UserClassification": 8
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Eighth-Note\\97-104_3.png",
@@ -646,8 +646,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\6-8-Time\\93-45_3.png",
-    "ExpectedClassification": 6,
-    "UserClassification": 6
+    "ExpectedClassification": 7,
+    "UserClassification": 7
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Sixteenth-Note\\9-112_3.png",
@@ -701,8 +701,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\4-4-Time\\62-22_3.png",
-    "ExpectedClassification": 5,
-    "UserClassification": 5
+    "ExpectedClassification": 6,
+    "UserClassification": 6
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Thirty-Two-Note\\26-127_3.png",
@@ -721,8 +721,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\6-8-Time\\48-47_3.png",
-    "ExpectedClassification": 6,
-    "UserClassification": 6
+    "ExpectedClassification": 7,
+    "UserClassification": 7
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Thirty-Two-Rest\\71-131_3.png",
@@ -736,8 +736,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\2-4-Time\\75-37_3.png",
-    "ExpectedClassification": 2,
-    "UserClassification": 2
+    "ExpectedClassification": 3,
+    "UserClassification": 3
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Sharp\\50-57_3.png",
@@ -776,8 +776,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\2-2-Time\\68-43_3.png",
-    "ExpectedClassification": 1,
-    "UserClassification": 1
+    "ExpectedClassification": 2,
+    "UserClassification": 2
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\G-Clef\\25-77_3.png",
@@ -786,8 +786,8 @@
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\12-8-Time\\23-3_3.png",
-    "ExpectedClassification": 8,
-    "UserClassification": 8
+    "ExpectedClassification": 1,
+    "UserClassification": 1
   },
   {
     "FilePath": "C:\\Users\\Alex\\Desktop\\images\\Sixteenth-Note\\57-109_3.png",

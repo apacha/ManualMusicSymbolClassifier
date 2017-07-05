@@ -42,8 +42,6 @@ namespace WpfApp1
             var pathToFiles = @"C:\Users\Alex\Desktop\images";
             var directories = Directory.EnumerateDirectories(pathToFiles).ToList();
             var classes = directories.Select(p => Path.GetFileName(p)).ToList();
-            classes.Remove("12-8-Time");
-            classes.Insert(7, "12-8-Time");
 
             var files = new List<String>();
             foreach (var directory in directories)
