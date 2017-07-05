@@ -37,7 +37,7 @@
                 HorizontalAlignment="Left"
                 Margin="344,489,0,10"
                 Width="152"
-                Click="button2_Click" />
+                Click="SaveResults" />
         <Label x:Name="labelProgress"
                Content="0/0"
                HorizontalAlignment="Left"
@@ -48,7 +48,7 @@
                 HorizontalAlignment="Left"
                 Margin="26,489,0,10"
                 Width="151"
-                Click="button3_Click" />
+                Click="LoadResults" />
         <Button x:Name="undoButton"
                 Content="Undo (left shift)"
                 HorizontalAlignment="Left"
@@ -79,6 +79,14 @@
                VerticalAlignment="Top"
                Width="351"
                Source="CheatSheet.png" />
+        <Button x:Name="button1"
+                Content="Load multiple results"
+                HorizontalAlignment="Left"
+                Margin="565,489,0,0"
+                VerticalAlignment="Top"
+                Width="147"
+                Height="26"
+                Click="button1_Click" />
 
     </Grid>
 </Window>

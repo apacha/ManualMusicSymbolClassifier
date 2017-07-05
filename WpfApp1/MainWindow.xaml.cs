@@ -54,7 +54,7 @@ namespace WpfApp1
 
             foreach (var file in files)
             {
-                var fileNameWithSymbolFolder = file.Substring(pathToFiles.Length+1);
+                var fileNameWithSymbolFolder = file.Substring(pathToFiles.Length + 1);
                 var className = fileNameWithSymbolFolder.Substring(0, fileNameWithSymbolFolder.Length - new FileInfo(file).Name.Length - 1);
                 var expectedType = classes.IndexOf(className) + 1;
                 var classification = new Classification(file, expectedType);
@@ -93,16 +93,16 @@ namespace WpfApp1
             LoadNextImage();
         }
 
-        private void button2_Click(object sender, RoutedEventArgs e)
+        private void SaveResults(object sender, RoutedEventArgs e)
         {
             var json = JsonConvert.SerializeObject(_classifications);
             var resultFile = $"results{DateTime.Now.ToString("hh-mm-ss")}.json";
             File.WriteAllText(resultFile, json);
             MessageBox.Show(this, $"File {resultFile} saved.");
-                
+
         }
 
-        private void button3_Click(object sender, RoutedEventArgs e)
+        private void LoadResults(object sender, RoutedEventArgs e)
         {
             try
             {
@@ -147,12 +147,15 @@ namespace WpfApp1
             var wrongClassificationsCount = wrongClassifications.Count();
             var correctClassifications = _classifications.Where(c => c.UserClassification != Category.Unclassified && c.UserClassification == c.ExpectedClassification).Count();
 
-            string message = $"Total classifications: {totalClassifications}\n" + 
-                $"Correct classifications: {correctClassifications}\n" + 
-                $"Wrong classifications: {wrongClassificationsCount}\n" + 
-                $"Accuracy: {correctClassifications * 100.0 / totalClassifications}%\n\n" + 
-                $"Incorrect files: {string.Join(" ", wrongClassifications.Select(c => Path.GetFileName(c.FilePath)))}" 
-                
+            var expectedClasses = $"[{string.Join(",", _classifications.Select(c => c.ExpectedClassification))}]";
+            var userClasses = $"[{string.Join(",", _classifications.Select(c => c.UserClassification))}]";
+
+            string message = $"Total classifications: {totalClassifications}\n" +
+                $"Correct classifications: {correctClassifications}\n" +
+                $"Wrong classifications: {wrongClassificationsCount}\n" +
+                $"Accuracy: {correctClassifications * 100.0 / totalClassifications}%\n\n" +
+                $"Incorrect files: {string.Join(" ", wrongClassifications.Select(c => Path.GetFileName(c.FilePath)))}"
+
                 ;
             MessageBox.Show(this, message);
         }
@@ -187,6 +190,25 @@ namespace WpfApp1
                 MessageBox.Show("Ungültige Klassen-nummber: " + ex.Message);
             }
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog
+            {
+                Multiselect = true
+            };
+            var dialogResult = dialog.ShowDialog();
+            if (dialogResult.HasValue && dialogResult.Value)
+            {
+                _classifications.Clear();
+                foreach (var fileName in dialog.FileNames)
+                {
+                    var json = File.ReadAllText(fileName);
+                    var classifications = JsonConvert.DeserializeObject<List<Classification>>(json);
+                    _classifications.AddRange(classifications);
+                }
+            }
+        }
     }
 
     internal class Category
@@ -198,7 +220,7 @@ namespace WpfApp1
 
     internal class Classification
     {
-        public string FilePath { get; set;  }
+        public string FilePath { get; set; }
 
         public int ExpectedClassification { get; set; }
 
