@@ -20,7 +20,7 @@
                Margin="196,116,0,0"
                Stretch="None" />
         <Button x:Name="button"
-                Content="Nächstes Symbol (Enter)"
+                Content="Next Symbol (Enter)"
                 HorizontalAlignment="Left"
                 Margin="26,221,0,0"
                 VerticalAlignment="Top"
@@ -28,7 +28,7 @@
                 Height="41"
                 Click="button_Click" />
         <Label x:Name="label"
-               Content="Welche Klasse siehst du?"
+               Content="Which class do you see?"
                HorizontalAlignment="Left"
                Margin="37,135,0,0"
                VerticalAlignment="Top" />

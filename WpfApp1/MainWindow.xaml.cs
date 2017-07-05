@@ -52,7 +52,7 @@ namespace WpfApp1
             }
 
             files.Shuffle();
-            files = files.Take(160).ToList();
+            files = files.Take(200).ToList();
 
             foreach (var file in files)
             {
