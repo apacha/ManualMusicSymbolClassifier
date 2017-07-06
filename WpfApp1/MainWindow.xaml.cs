@@ -150,11 +150,14 @@ namespace WpfApp1
             var expectedClasses = $"[{string.Join(",", _classifications.Select(c => c.ExpectedClassification))}]";
             var userClasses = $"[{string.Join(",", _classifications.Select(c => c.UserClassification))}]";
 
+            var incorrectFiles = string.Join(", ", wrongClassifications.Select(c => Path.GetFileName(c.FilePath)));
+
+
             string message = $"Total classifications: {totalClassifications}\n" +
                 $"Correct classifications: {correctClassifications}\n" +
                 $"Wrong classifications: {wrongClassificationsCount}\n" +
                 $"Accuracy: {correctClassifications * 100.0 / totalClassifications}%\n\n" +
-                $"Incorrect files: {string.Join(" ", wrongClassifications.Select(c => Path.GetFileName(c.FilePath)))}"
+                $"Incorrect files: {incorrectFiles}"
 
                 ;
             MessageBox.Show(this, message);
